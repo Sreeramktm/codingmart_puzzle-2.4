@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+      $("#btn").css("background-color","red");
+    $("#box").animate({height:"395px"},8000);
+      $("#flow").css("background-color","aqua");
+      $("#flow").animate({height:"400px"},4000);
+  });
+    $("#btn1").click(function(){
+      $("#box").stop();
+        $("#flow").stop();
+   
+});
+});
+</script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <style>
+        .box1{
+            border: solid black;
+            height: 400px;
+            width: 250px;
+            padding: 0px;
+            margin-top: 50px;
+            margin-left: 80px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        .tap1
+        {
+            border: solid brown;
+            height: 8px;
+            width: 80px;
+            margin-left: 331px;
+            margin-top: -14px;
+            background-color: brown;
+        }
+        .tap2
+        {
+            border: solid brown;
+            height: 70px;
+            width: 10px;
+            margin-left: 390px;
+            margin-top: -20px;
+            background-color: brown;
+        }
+        .top
+        {
+            border: solid black;
+            height: 6px;
+            width: 25px;
+            background-color: green;
+            margin-left: 383px;
+            margin-top: -30px;
+            cursor: pointer;
+            position: absolute;
+        }
+        </style>
+</head>
+<body>
+   <div class="box1">
+       <div id="box" style="height: 5px; width: 250px; padding: 0px;margin-top: 0px; margin-left: 0px; background-color:white; border-radius: 10px"></div>
+   </div>
+   <div class="top" id="btn1" hidden></div>
+   <div class="top" id="btn"></div>
+    
+   <div class="tap1"></div>
+   <div id="btn1" class="tap2"></div>
+   <div id="flow" style="height: 10px; width: 10px; background-color: white;margin-left: 394px"></div> 
+</body>
+</html>
